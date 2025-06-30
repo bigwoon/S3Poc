@@ -4,8 +4,8 @@ import os
 
 AWS_REGION = os.getenv("AWS_REGION", "us-east-2")
 S3_BUCKET = os.getenv("S3_BUCKET", "nrve-audio-backend")  # Replace with your S3 bucket name
-AWS_ACCESS_KEY = os.getenv("AWS_ACCESS_KEY_ID","AKIAW2R4M5ICL3KH7QOT" )
-AWS_SECRET_KEY = os.getenv("AWS_SECRET_ACCESS_KEY","E3DHJKy0Y1qz9aJFRl+aC/ThJVSOo3AXUSGw7KB5")
+#AWS_ACCESS_KEY = os.getenv("","" )
+#AWS_SECRET_KEY = os.getenv("","")
 
 def upload_to_s3(file_path, s3_key):
     s3 = boto3.client("s3",
