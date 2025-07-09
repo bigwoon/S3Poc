@@ -1,6 +1,13 @@
 {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    },
+
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "types": ["expo"],
+    "jsx": "react-native",
     "strict": true,
     "paths": {
       "@/*": [
@@ -13,5 +20,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "components/index.tsx"  ]
 }
